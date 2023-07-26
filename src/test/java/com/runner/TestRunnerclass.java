@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(tags = ("@Login"),plugin={"pretty","json:target\\output.json"},
+@CucumberOptions(tags = ("@Login or @SearchHotel or @SelectHotel or @BookHotel or @CancelBooking"),plugin={"pretty","json:target\\output.json"},
 dryRun=false,features ="src\\test\\resources",glue ="org.stepdefinition")
 public class TestRunnerclass {				
 	
@@ -18,7 +18,7 @@ public class TestRunnerclass {
 	public static void afterclass() {
 					
 		//class the jvm reprot(Generate)
-		Reporting.generateJVMReport("C:\\Users\\ADMIN\\eclipse-workspace\\OMRBranchAdactinHotelAutomation\\target\\output.json");
+		Reporting.generateJVMReport("D:\\adactinhotel\\AdactinHotel\\target\\output.json");
    
 		
 	}

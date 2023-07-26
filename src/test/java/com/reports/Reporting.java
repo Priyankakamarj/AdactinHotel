@@ -20,7 +20,7 @@ public  class Reporting  {
 	public static void generateJVMReport(String jsonFile) {
 			
 		//1.Mention the path of JVM Report file-->where to file
-		File file = new File("C:\\Users\\ADMIN\\eclipse-workspace\\OMRBranchAdactinHotelAutomation\\target");
+		File file = new File("D:\\adactinhotel\\AdactinHotel\\target");
 		
 		//2.create the object for configuration class
 		Configuration configuration = new Configuration(file,"Adactin Automation");

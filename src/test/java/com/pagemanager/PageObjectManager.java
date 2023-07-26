@@ -18,7 +18,7 @@ public class PageObjectManager {
 	private BookingConfirmPage bookingconfirmHotelPage;
 	private CancelBookingPage cancelBookingPage;
 	
-	public LoginPage getLoginPage() {
+	public LoginPage getLoginPage(){
 		return (loginPage==null)?loginPage = new LoginPage():loginPage;
 	}
 	public SearchHotelPage getSearchHotelPage() {

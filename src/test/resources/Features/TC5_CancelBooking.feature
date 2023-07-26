@@ -4,7 +4,7 @@ Feature: Verifying the Adactinhotel with cancel Booking details
   Scenario Outline: Verifying Adactinhotel cancel hotel by cancelling created order id
     Given User is on the Adactinhotel page
     When User should perform login "<userName>" and "<password>"
-    Then User should verify after login success message "Hello Spriyanka!"
+    Then User should verify after login success message "Hello saranya25!"
     And User should enter valid data and click on the search hotel page "<location>","<hotels>","<roomType>","<roomno>","<checkInDate>","<checkoutDate>","<adultroom>" and "<childroom>"
     Then User should verify after search hotel success message "Select Hotel"
     And User should select hotel name and click continue
@@ -20,16 +20,16 @@ Feature: Verifying the Adactinhotel with cancel Booking details
     Then User should verify after cancel OrderId success message "The booking has been cancelled."
 
     Examples: 
-      | userName  | password  | location | hotels      | roomType | roomno    | checkInDate | checkoutDate | adultroom | childroom | firstName | lastName | address  |
-      | Spriyanka | qwerty666 | Sydney   | Hotel Creek | Standard | 3 - Three | 30/12/2022  | 31/12/2022   | 3 - Three | 1 - One   | Priyanka  | Kamaraj  | Ambattur |
+      | userName  | password | location | hotels      | roomType | roomno    | checkInDate | checkoutDate | adultroom | childroom | firstName | lastName | address  |
+      | saranya25 | D03713   | Sydney   | Hotel Creek | Standard | 3 - Three | 30/12/2022  | 31/12/2022   | 3 - Three | 1 - One   | Priyanka  | Kamaraj  | Ambattur |
 
   Scenario Outline: Verifying Adactinhotel cancel hotel by cancelling existing order id
     Given User is on the Adactinhotel page
     When User should perform login "<userName>" and "<password>"
-    Then User should verify after login success message "Hello Spriyanka!"
+    Then User should verify after login success message "Hello saranya25!"
     And User should cancel the existing "<OrderId>"
     Then User should verify after cancel OrderId success message "The booking has been cancelled."
 
     Examples: 
-      | userName  | password  | OrderId    |
-      | Spriyanka | qwerty666 | 3ACYLN3748 |
+      | userName  | password | OrderId    |
+      | saranya25 | D03713   | 3ACYLN3748 |
